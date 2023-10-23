@@ -26,7 +26,7 @@
         <fieldset style="height: 50px; border-radius: 10px;" >
             <table  style="height: 40px;" >
                 <th style="width:450px; text-align:left; color:yellow;" valign="top;">
-                    <img src="logo_main.png" alt="logo" style="height:50px; width: 50px;"> <sup>DOT NGO</sup>
+                    <img src="img/logo_main.png" alt="logo" style="height:50px; width: 50px;"> <sup>DOT NGO</sup>
                    
                 </th>
                 <th style="width:1950px; text-align:center; color:aqua;">
@@ -37,7 +37,7 @@
                     if (isset($_SESSION['username'])) { ?>
                         <th style="width:40px;">
                             <button type="submit" name="submit_button" style="height: 50px; width: 50px; padding: 0; border: none;">
-                                <img src="login_logo.jpg" alt="Submit" width="50" height="50">
+                                <img src="img/login_logo.jpg" alt="Submit" width="50" height="50">
                             </button>
                             <?php
                             $userName = $_SESSION['username'];
@@ -60,7 +60,7 @@
             <table align="left">
                     <tr>
                         <td>
-                            <img src="upload_logo.png" alt="Upload logo" width="40" height="40">
+                            <img src="img/upload_logo.png" alt="Upload logo" width="40" height="40">
                         </td>
                         <td>
                             <button>New Post</button>
@@ -71,10 +71,10 @@
                 <table align="left">
                     <tr>
                         <td>
-                            <img src="donor_logo.jpg" alt="Donor logo" width="50" height="50">
+                            <img src="img/donor_logo.jpg" alt="Donor logo" width="50" height="50">
                         </td>
                         <td>
-                            <button>Donor list</button>
+                            <button formaction="donar_list.php" >Donor list</button>
                         </td>
                     </tr>
                 </table>
@@ -82,10 +82,10 @@
                 <table align="left">
                     <tr>
                         <td>
-                            <img src="Account_logo.jpg" alt="Accoun logo"  width="50" height="50">
+                            <img src="img/Account_logo.jpg" alt="Accoun logo"  width="50" height="50">
                         </td>
                         <td>
-                            <button>Account</button>
+                            <button formaction="account.php" >Account</button>
                         </td>
                     </tr>
                 </table>
@@ -93,10 +93,10 @@
                 <table align="left">
                     <tr>
                         <td >
-                            <img src="profile_logo.jpg" alt="profile setting"  width="50" height="50" >
+                            <img src="img/profile_logo.jpg" alt="profile setting"  width="50" height="50" >
                         </td>
                         <td>
-                            <button>Profile setings</button>
+                            <button formaction="profile _seting.php">Profile setings</button>
                         </td>
                     </tr>
                 </table>
@@ -105,7 +105,7 @@
                    
                     <tr>
                         <td>
-                            <img src="logout_logo.png" alt="Logout logo" width="50" height="50">
+                            <img src="img/logout_logo.png" alt="Logout logo" width="50" height="50">
                         </td>
                         <td>
                             <button name="logout">Log Out</button>
@@ -118,12 +118,16 @@
             
         </fieldset>
         
+
+
+
+        
        
         <fieldset style="height: 510px; width: 999px; float: left; border-radius: 10px; ">
             <table style="height: 30%; width:1000px;" align="right" >
                 <tr>
                     <td>
-                        <img src="child_ngo.png" alt="Ngo logo" height="100" width="100" >
+                        <img src="img/child_ngo.png" alt="Ngo logo" height="100" width="100" >
                         
                     </td>
                     <td>
@@ -132,7 +136,7 @@
                             – because their futures are our brightest colors." 🌟</p>
                     </td>
                     <td>
-                        <img src="child_logo3.jpg" alt="child logo" height="150" width="150">
+                        <img src="img/child_logo3.jpg" alt="child logo" height="150" width="150">
                     </td>
                 </tr>
             </table><br> <br>
@@ -147,7 +151,7 @@
                         </td>
 
                         <td style="text-align:right;" >
-                            <img src="verified.png" alt="Active logo" height="20" width="20" >
+                            <img src="img/verified.png" alt="Active logo" height="20" width="20" >
                             <sup>Active</sup>
                            
                         </td>
@@ -201,7 +205,7 @@
                         </td>
 
                         <td style="text-align:right;">
-                            <img src="ratio.jpg" alt="ratio meter" height="50" width="50" >
+                            <img src="img/ratio.jpg" alt="ratio meter" height="50" width="50" >
                         </td>
                     </tr>
                 </table>
