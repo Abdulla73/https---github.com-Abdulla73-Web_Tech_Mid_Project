@@ -1,3 +1,17 @@
+<?php
+    session_start(); 
+    include_once 'database_conn.php';
+?>
+
+<?php
+         
+        if (isset($_POST['logout'])) {
+            session_destroy();
+            header('location:login_page.php');
+            exit;
+        }
+        
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,20 +34,22 @@
                 </th>
 
                 <?php
-                    session_start(); 
                     if (isset($_SESSION['username'])) { ?>
                         <th style="width:40px;">
-                        <button type="submit" name="submit_button" style="height: 50px; width: 50px; padding: 0; border: none;">
-                            <img src="login_logo.jpg" alt="Submit" width="50" height="50">
-                        
-                        </button>
-                       
-                        <?php $userName = $_SESSION['username'];?>
-                        <td style="width:400px; color:yellow;"><?php  echo " Welcome ". $userName; ?></td>
-                            
+                            <button type="submit" name="submit_button" style="height: 50px; width: 50px; padding: 0; border: none;">
+                                <img src="login_logo.jpg" alt="Submit" width="50" height="50">
+                            </button>
+                            <?php
+                            $userName = $_SESSION['username'];
+                            echo "<td style='width:400px; color:yellow;'>Welcome " . $userName . "</td>";
+                            ?>
                         </th>
-                
-                <?php }?>  
+                    <?php } else {
+                        header('location: login_page.php');
+                        exit; // It's a good practice to exit after redirection.
+                    }
+                ?>
+
             </table>
         </fieldset>
 
@@ -92,7 +108,7 @@
                             <img src="logout_logo.png" alt="Logout logo" width="50" height="50">
                         </td>
                         <td>
-                            <button>Log Out</button>
+                            <button name="logout">Log Out</button>
                         </td>
                     </tr>
                   
@@ -196,7 +212,9 @@
 
 
     </form>
-   
+    
+  
+
   
 </body>
 </html>
