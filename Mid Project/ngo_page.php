@@ -38,7 +38,67 @@
         </fieldset>
 
         <fieldset style="height: 510px; text-align:center; width:200px; float: left; border-radius: 10px; " >
-            <h1 style="margin: 0; position: relative; float:left; top: 50%; transform: translateY(-50%);">hni</h1>
+            <h1>Options:</h1>
+            <center>
+
+            <table align="left">
+                    <tr>
+                        <td>
+                            <img src="upload_logo.png" alt="Upload logo" width="40" height="40">
+                        </td>
+                        <td>
+                            <button>New Post</button>
+                        </td>
+                    </tr>
+                </table>
+
+                <table align="left">
+                    <tr>
+                        <td>
+                            <img src="donor_logo.jpg" alt="Donor logo" width="50" height="50">
+                        </td>
+                        <td>
+                            <button>Donor list</button>
+                        </td>
+                    </tr>
+                </table>
+               
+                <table align="left">
+                    <tr>
+                        <td>
+                            <img src="Account_logo.jpg" alt="Accoun logo"  width="50" height="50">
+                        </td>
+                        <td>
+                            <button>Account</button>
+                        </td>
+                    </tr>
+                </table>
+
+                <table align="left">
+                    <tr>
+                        <td >
+                            <img src="profile_logo.jpg" alt="profile setting"  width="50" height="50" >
+                        </td>
+                        <td>
+                            <button>Profile setings</button>
+                        </td>
+                    </tr>
+                </table>
+                
+                <table align="left"  style="position: absolute; top: 530px; left: 20px;" >
+                   
+                    <tr>
+                        <td>
+                            <img src="logout_logo.png" alt="Logout logo" width="50" height="50">
+                        </td>
+                        <td>
+                            <button>Log Out</button>
+                        </td>
+                    </tr>
+                  
+                </table>
+            </center>
+            
             
         </fieldset>
         
