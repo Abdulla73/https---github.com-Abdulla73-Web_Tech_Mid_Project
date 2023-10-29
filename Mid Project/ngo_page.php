@@ -101,6 +101,17 @@
                             </td>
                         </tr>
                     </table>
+
+                    <table align="left">
+                        <tr>
+                            <td >
+                                <img src="img/feed_logo.jpg" alt="News feed"  width="50" height="50" >
+                            </td>
+                            <td>
+                                <button formaction="newsfeed_page.php">News Feed</button>
+                            </td>
+                        </tr>
+                    </table>
                     
                     <table align="left"  style="position: absolute; top: 530px; left: 20px;" >
                     
