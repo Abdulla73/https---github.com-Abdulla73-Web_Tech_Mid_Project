@@ -222,19 +222,27 @@
                         <textarea name="postText" rows="4" cols="50"></textarea><br>
                         <input type="submit" value="Post">
                     </form>';
-            } elseif ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["postText"])) {
-                // Process the posted data here, like saving it to a database.
+            } 
+            elseif ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["postText"])) {
                 $postText = $_POST["postText"];
+                if(!empty($postText)) 
+                {
+                    $userName = $_SESSION['username'];
+                    $sqlNgopost = "INSERT INTO ngo_post (Ngo_name, post) VALUES ('$userName','$postText')";
+                    $conn->query($sqlNgopost);
+                    
+                }
+                else
+                {
+                    echo "Error posting: " . $conn->error;
+                }
                 
-                // Insert into your data table.
-                // You should connect to your database and run an SQL query here.
-
-                // Redirect back to the page with the data table or wherever you want.
-                header("Location: your_page_with_data_table.php");
+               
+                
             }
         ?>
-
-    
-  
+        <?php
+            $conn->close();
+        ?>
     </body>
 </html>
