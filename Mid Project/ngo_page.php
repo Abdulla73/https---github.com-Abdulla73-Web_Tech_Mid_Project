@@ -46,179 +46,195 @@
                         </th>
                     <?php } else {
                         header('location: login_page.php');
-                        exit; // It's a good practice to exit after redirection.
+                        exit; 
                     }
                 ?>
 
             </table>
         </fieldset>
 
-        <fieldset style="height: 510px; text-align:center; width:200px; float: left; border-radius: 10px; " >
-            <h1>Options:</h1>
-            <center>
-
-            <table align="left">
-                    <tr>
-                        <td>
-                            <img src="img/upload_logo.png" alt="Upload logo" width="40" height="40">
-                        </td>
-                        <td>
-                            <button>New Post</button>
-                        </td>
-                    </tr>
-                </table>
+        <div style="display: flex;">
+            <fieldset style="height: 510px; text-align:center; width:200px; float: left; border-radius: 10px; " >
+                <h1>Options:</h1>
+                <center>
 
                 <table align="left">
-                    <tr>
-                        <td>
-                            <img src="img/donor_logo.jpg" alt="Donor logo" width="50" height="50">
-                        </td>
-                        <td>
-                            <button formaction="donar_list.php" >Donor list</button>
-                        </td>
-                    </tr>
-                </table>
-               
-                <table align="left">
-                    <tr>
-                        <td>
-                            <img src="img/Account_logo.jpg" alt="Accoun logo"  width="50" height="50">
-                        </td>
-                        <td>
-                            <button formaction="account.php" >Account</button>
-                        </td>
-                    </tr>
-                </table>
+                        <tr>
+                            <td>
+                                <img src="img/post_logo.png" alt="Upload logo" width="40" height="40">
+                            </td>
+                            <td>
+                                <button type="submit" name="newPost">New Post</button>
+                            </td>
+                        </tr>
+                    </table>
 
-                <table align="left">
-                    <tr>
-                        <td >
-                            <img src="img/profile_logo.jpg" alt="profile setting"  width="50" height="50" >
-                        </td>
-                        <td>
-                            <button formaction="profile _seting.php">Profile setings</button>
-                        </td>
-                    </tr>
-                </table>
+                    <table align="left">
+                        <tr>
+                            <td>
+                                <img src="img/donor_logo.jpg" alt="Donor logo" width="50" height="50">
+                            </td>
+                            <td>
+                                <button formaction="donar_list.php" >Donor list</button>
+                            </td>
+                        </tr>
+                    </table>
                 
-                <table align="left"  style="position: absolute; top: 530px; left: 20px;" >
-                   
+                    <table align="left">
+                        <tr>
+                            <td>
+                                <img src="img/Account_logo.jpg" alt="Accoun logo"  width="50" height="50">
+                            </td>
+                            <td>
+                                <button formaction="account.php" >Account</button>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table align="left">
+                        <tr>
+                            <td >
+                                <img src="img/profile_logo.jpg" alt="profile setting"  width="50" height="50" >
+                            </td>
+                            <td>
+                                <button formaction="profile _seting.php">Profile setings</button>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <table align="left"  style="position: absolute; top: 530px; left: 20px;" >
+                    
+                        <tr>
+                            <td>
+                                <img src="img/logout_logo.png" alt="Logout logo" width="50" height="50">
+                            </td>
+                            <td>
+                                <button name="logout">Log Out</button>
+                            </td>
+                        </tr>
+                    
+                    </table>
+                </center>
+                
+                
+            </fieldset>
+            
+
+            <fieldset style="height: 510px; width: 999px; float:left; border-radius: 10px; ">
+                <table style="height: 30%; width:1000px;" align="right" >
                     <tr>
                         <td>
-                            <img src="img/logout_logo.png" alt="Logout logo" width="50" height="50">
-                        </td>
-                        <td>
-                            <button name="logout">Log Out</button>
-                        </td>
-                    </tr>
-                  
-                </table>
-            </center>
-            
-            
-        </fieldset>
-        
-
-
-
-        
-       
-        <fieldset style="height: 510px; width: 999px; float: left; border-radius: 10px; ">
-            <table style="height: 30%; width:1000px;" align="right" >
-                <tr>
-                    <td>
-                        <img src="img/child_ngo.png" alt="Ngo logo" height="100" width="100" >
-                        
-                    </td>
-                    <td>
-                        <h1 align="center" >Every child deserves a happy childhood 🙌 </h1>
-                        <p>"Empowering every child's dreams, one smile at a time 
-                            – because their futures are our brightest colors." 🌟</p>
-                    </td>
-                    <td>
-                        <img src="img/child_logo3.jpg" alt="child logo" height="150" width="150">
-                    </td>
-                </tr>
-            </table><br> <br>
-            
-            <fieldset style="width: 960px; height: 50px; border-radius: 20px; background-color:lightgray; ">
-                <table style="width:960px;">
-                    <tr>
-                        <td>
-                            <p>
-                                Activation Status
-                            </p>
-                        </td>
-
-                        <td style="text-align:right;" >
-                            <img src="img/verified.png" alt="Active logo" height="20" width="20" >
-                            <sup>Active</sup>
-                           
-                        </td>
-                    </tr>
-                </table>
-            </fieldset><br>
-
-
-            <fieldset style="width: 960px; height: 50px; border-radius: 20px; background-color:lightgray;">
-                <table style="width:960px;">
-                    <tr>
-                        <td>
-                            <p>
-                                Donation Progress
-                            </p>
-                        </td>
-
-                        <td style="text-align:right;">
-                            <progress max="100" value="50">
-                                
-                            </progress>
+                            <img src="img/child_ngo.png" alt="Ngo logo" height="100" width="100" >
                             
                         </td>
-                    </tr>
-                </table>
-            </fieldset> <br>
-
-            <fieldset style="width: 960px; height: 50px; border-radius: 20px; background-color:lightgray;">
-                <table style="width:960px;">
-                    <tr>
                         <td>
-                            <p>
-                                Next Event Date
-                            </p>
+                            <h1 align="center" >Every child deserves a happy childhood 🙌 </h1>
+                            <p>"Empowering every child's dreams, one smile at a time 
+                                – because their futures are our brightest colors." 🌟</p>
                         </td>
-
-                        <td style="text-align:right;">
-                            <b>01-Nov-2023</b>
-                        </td>
-                    </tr>
-                </table>
-            </fieldset><br>
-
-            <fieldset style="width: 960px; height: 50px; border-radius: 20px; background-color:lightgray;">
-                <table style="width:960px;">
-                    <tr>
                         <td>
-                            <p>
-                                New Donar's Join Ratio
-                            </p>
-                        </td>
-
-                        <td style="text-align:right;">
-                            <img src="img/ratio.jpg" alt="ratio meter" height="50" width="50" >
+                            <img src="img/child_logo3.jpg" alt="child logo" height="150" width="150">
                         </td>
                     </tr>
-                </table>
+                </table><br> <br>
+                
+                <fieldset style="width: 960px; height: 50px; border-radius: 20px; background-color:lightgray; ">
+                    <table style="width:960px;">
+                        <tr>
+                            <td>
+                                <p>
+                                    Activation Status
+                                </p>
+                            </td>
+
+                            <td style="text-align:right;" >
+                                <img src="img/verified.png" alt="Active logo" height="20" width="20" >
+                                <sup>Active</sup>
+                            
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset><br>
+
+
+                <fieldset style="width: 960px; height: 50px; border-radius: 20px; background-color:lightgray;">
+                    <table style="width:960px;">
+                        <tr>
+                            <td>
+                                <p>
+                                    Donation Progress
+                                </p>
+                            </td>
+
+                            <td style="text-align:right;">
+                                <progress max="100" value="50">
+                                    
+                                </progress>
+                                
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset> <br>
+
+                <fieldset style="width: 960px; height: 50px; border-radius: 20px; background-color:lightgray;">
+                    <table style="width:960px;">
+                        <tr>
+                            <td>
+                                <p>
+                                    Next Event Date
+                                </p>
+                            </td>
+
+                            <td style="text-align:right;">
+                                <b>01-Nov-2023</b>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset><br>
+
+                <fieldset style="width: 960px; height: 50px; border-radius: 20px; background-color:lightgray;">
+                    <table style="width:960px;">
+                        <tr>
+                            <td>
+                                <p>
+                                    New Donar's Join Ratio
+                                </p>
+                            </td>
+
+                            <td style="text-align:right;">
+                                <img src="img/ratio.jpg" alt="ratio meter" height="50" width="50" >
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+
             </fieldset>
 
-        </fieldset>
+        </div>
 
 
 
     </form>
     
-  
+        <?php
+            if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["newPost"])) {
+                echo '<form method="post">
+                        <textarea name="postText" rows="4" cols="50"></textarea><br>
+                        <input type="submit" value="Post">
+                    </form>';
+            } elseif ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["postText"])) {
+                // Process the posted data here, like saving it to a database.
+                $postText = $_POST["postText"];
+                
+                // Insert into your data table.
+                // You should connect to your database and run an SQL query here.
 
+                // Redirect back to the page with the data table or wherever you want.
+                header("Location: your_page_with_data_table.php");
+            }
+        ?>
+
+    
   
-</body>
+    </body>
 </html>
