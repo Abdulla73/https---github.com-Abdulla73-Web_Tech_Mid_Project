@@ -31,7 +31,7 @@
     </form>
 
 <?php
-// Your database connection and other code here...
+
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
@@ -46,7 +46,7 @@
                 echo '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">';
                 echo '<p style="background-color: #f2dede; color: #a94442; padding: 10px;">Please enter both email and password!</p>';
                 echo '</div>';
-                header("Refresh: 05; url=http://localhost/Project/login_page.php");
+                header("Refresh: 05; url=http://localhost/Mid%20Project/login_page.php");
             } else
             {
                 //sql query
@@ -78,7 +78,7 @@
                     echo '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">';
                     echo '<p style="background-color: #f2dede; color: #a94442; padding: 10px;">Login failed! Please check your email and password!</p>';
                     echo '</div>';
-                    header("Refresh: 03; url=http://localhost/Project/login_page.php");
+                    header("Refresh: 03; url=http://localhost/Mid%20Project/login_page.php");
                     
                 }
             }
