@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NGO Registration</title>
+    <title>Registration</title>
 </head>
 <body>
     <form method="post">
         <center>
             <fieldset style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); " >
                 <u><h1 align= "Center">Registration</h1><br> </u>
-                NGO name: <input type="text" name="user_name"><br>
+                Name: <input type="text" name="user_name"><br>
                 <hr><br>
-                NGO Email: <input type="email" name="Email" ><br>
+                Email: <input type="email" name="Email" ><br>
                 <hr><br>
                 Paasword:    <input type="password" name="password" ><br>
                 <hr><br>
@@ -22,7 +22,7 @@
                 <label for="user_type">Select User Type:</label>
                 <select name="user_type" id="user_type">
                     <option value="ngo">NGO</option>
-                    <option value="user">User</option>
+                    <option value="Donar">User</option>
                 </select>
                 <hr><br>
               
@@ -40,16 +40,13 @@
 
         if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["confirm"]))
         {
-             
-           
-            // Retrieve data from POST
+
             $name = $_POST["user_name"];
             $email = $_POST["Email"];
             $password = $_POST["password"];
             $confirmPassword = $_POST["confrim_password"];
             $userType = $_POST["user_type"];
-            
-            // Validate the data (you can add more validation)
+
             if (empty($name) || empty($email) || empty($password) || empty($confirmPassword) || empty($userType)){
                 echo '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">';
                 echo '<p style="background-color: #f2dede; color: #a94442; padding: 10px;">Please fill all the fields!</p>';
@@ -61,7 +58,7 @@
                 echo '</div>';
                 header("Refresh: 05; url=http://localhost/Mid Project/registration_page.php");
             } else {
-                // Create a SQL query using a prepared statement
+                
                 $sql = "INSERT INTO user_lgin_info (user_name, mail, password, user_type) VALUES (?, ?, ?, ?)";
                 
                 $stmt = $conn->prepare($sql);
