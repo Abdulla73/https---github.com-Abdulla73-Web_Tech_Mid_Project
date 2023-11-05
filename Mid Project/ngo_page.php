@@ -30,7 +30,7 @@
                    
                 </th>
                 <th style="width:1950px; text-align:center; color:aqua;">
-                    Welcome To your profie!
+                    Welcome To your profile!
                 </th>
 
                 <?php
@@ -239,8 +239,8 @@
                 if(!empty($postText)) 
                 {
                     $userName = $_SESSION['username'];
-                    $sqlNgopost = "INSERT INTO ngo_post (Ngo_name, post) VALUES ('$userName','$postText')";
-                    $conn->query($sqlNgopost);
+                    $sqlNopt = "INSERT INTO ngo_post (Ngo_name, post) VALUES ('$userName','$postText')";
+                    $conn->query($sqlNopt);
                     
                 }
                 else
