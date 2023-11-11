@@ -20,7 +20,7 @@ include_once 'database_conn.php';
 
                     </th>
                     <th style="width:1950px; text-align:center; color:aqua;">
-                        Your Account!
+                        Donor list!
                     </th>
 
                     <?php
@@ -45,7 +45,42 @@ include_once 'database_conn.php';
         </form>
         <form method="post">
             <fieldset style="height: 500px; text-align:center; width:1230px; float: left; border-radius: 10px; ">
+
+            <table border="1" style="margin-left: 40px;" >
+                <tr>
+                    <th style="width: 350px;">Name</th>
+                    <th style="width: 350px;">E-mail</th>
+                    <th style="width: 350px;">Contract</th>
+                </tr>
+
+            
+                <?php 
+                    get_donor_info();
+                ?>
+              
+            </table>
         </form>
+        
+        <?php
+        function get_donor_info()
+        {
+            global $conn;
+            $sql = "SELECT user_name, mail FROM user_lgin_info";
+            $res= mysqli_query($conn,$sql);
+            if ($res) {
+                while ($r = mysqli_fetch_assoc($res)) {
+                    echo "<tr>";
+                    echo "<td>" . $r["user_name"] . "</td>";
+                    echo "<td>" . $r["mail"] . "</td>";
+                    
+                    echo "</tr>";
+                }
+            } else {
+                echo "Oops, something went wrong!";
+            }
+        }
+        ?>
+
     </body>
 
 </html>

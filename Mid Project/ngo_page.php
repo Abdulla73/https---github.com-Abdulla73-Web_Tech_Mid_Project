@@ -5,13 +5,13 @@
 
 <?php
          
-        if (isset($_POST['logout'])) {
-            session_destroy();
-            header('location:login_page.php');
-            exit;
-        }
+    if (isset($_POST['logout'])) {
+        session_destroy();
+        header('location:login_page.php');
+        exit;
+    }
         
-    ?>
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
