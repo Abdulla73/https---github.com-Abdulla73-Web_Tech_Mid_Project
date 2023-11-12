@@ -65,7 +65,7 @@ include_once 'database_conn.php';
         function get_donor_info()
         {
             global $conn;
-            $sql = "SELECT user_name, mail FROM user_lgin_info";
+            $sql = "SELECT user_name, mail FROM user_lgin_info WHERE user_type='user'";
             $res= mysqli_query($conn,$sql);
             if ($res) {
                 while ($r = mysqli_fetch_assoc($res)) {
