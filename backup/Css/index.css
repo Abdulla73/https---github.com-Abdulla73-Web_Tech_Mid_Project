@@ -1,0 +1,124 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2; 
+}
+
+
+
+.index{
+    background-color:gold;
+    padding: 10px ;
+    margin:auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 10px;
+    height: 500px;
+    width:  60% ;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input{
+    padding:15px;
+    margin: 20px auto;
+    border: 5px;
+    background-color: none;
+    border-radius: 5px;
+    display: block;
+    width: 60%;
+    
+}
+
+
+
+
+button {
+    background-color: rgb(70, 95, 236); 
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    display: block; 
+    margin: 20px auto;
+}
+
+
+a {
+    color: #007bff; 
+    position:fixed;
+    top: 245px;
+    left: 460px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+h1{
+    color: snow;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+
+#greet{
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+#log_user{
+    position: fixed;
+    top: 150px;
+    left: 130px;
+    width: 20px;
+    height: 90px;
+}
+
+#log_pass{
+    position: fixed;
+    top: 215px;
+    left: 130px;
+    width: 20px;
+    height: 140px;
+}
+
+.animated-form {
+    animation: flip 0.8s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+@keyframes flip {
+    0% {
+        transform: perspective(400px) rotateY(0);
+    }
+
+    20% {
+        transform: perspective(400px) rotateY(90deg);
+    }
+
+    40% {
+        transform: perspective(400px) rotateY(180deg);
+    }
+    60% {
+        transform: perspective(400px) rotateY(90deg);
+    }
+
+    80% {
+        transform: perspective(400px) rotateY(180deg);
+    }
+    100% {
+        transform: perspective(400px) rotateY(0);
+    }
+}
+

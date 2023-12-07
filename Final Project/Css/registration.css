@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+ 
+}
+
+.card {
+    width: 40em;
+    height: 80vh;
+    background: linear-gradient(45deg, gold, yellow 40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.reg-form {
+    text-align: center;
+}
+
+.reg-form h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.reg-form input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.reg-form button {
+    width: 20%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #1b89d2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reg-form button:hover {
+    background-color: #b929b9;
+}
+
+.reg-form h3 {
+    margin-top: 20px; 
+    color: rgb(126, 156, 6);
+}
+
+.reg-form button[name="go-to-signin"] {
+    background-color: #2e4bcc;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+
+.reg-form button[name="go-to-signin"]:hover {
+    background-color: #27ae60;
+}
