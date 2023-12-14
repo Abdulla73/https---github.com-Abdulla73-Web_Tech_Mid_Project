@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			$status= validation($user_mail,$password);
 			if($status)
 			{
-				$_SESSION["user_name"] = getUsername($user_mail);
+				$_SESSION["user_name"] = $status;
                 header("Location: ../Views/dashboard.php");
                 exit();
 			}

@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+.logo{
+    float: left;
+    width: 33%;
+    background-color: lemonchiffon;
+}
+.logo img{
+    max-width: 82px;
+    max-height: 82px;
+    
+}
+
+.text{
+    float: left;
+    width: 33%;
+    background-color: lemonchiffon;
+    text-align: center;
+}
+
+.user-info{
+    float: left;
+    width: 15%;
+    background-color: lemonchiffon;
+    text-align: right;
+}
+.user-name{
+    float: left;
+    width: 19%;
+    background-color: lemonchiffon;
+    text-align: center;
+    padding-right: 10px;
+
+}
+
+.side-bar{
+    max-width: 25%;
+    float: left;
+    background-color: rgb(177, 226, 226);
+    
+    padding: 5px;
+}
+
+.other{
+    max-width: 85.6%;
+    float: left;
+   
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.controls table tr td img{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    
+}
+.controls h1{
+    padding: 10px;
+    color: chartreuse;
+
+}
+.pic5{
+    float: left;
+    max-width: 1050px;
+}
+.pic5 img{
+    max-width: 1050px;
+    max-height: 510px;
+}
+
+.pic6{
+    float: left;
+    max-width: 400px;
+}
+.pic6 img{
+    max-width: 340px;
+}
+.pic7{
+    float: left;
+    max-width:400px ;
+}
+.pic7 img{
+    max-width: 340px;
+    
+}
+
+.add-post{
+    position: fixed;
+    top: 120px;
+    left: 150px;
+    border: 2px solid lime;
+    padding: 5px;
+    border-radius: 5px;
+    background-color:rgb(146, 104, 223);
+}
+.post-form button{
+    background-color: rgb(201, 221, 222);
+    border-radius: 5px;
+}
+
+#post-btn{
+    display: block;
+}
+#cancel{
+    position: fixed;
+    top:290px;
+    left: 210px;
+}
+.post-form textarea{
+    background-color: white;
+    
+}
+
+.hidden{
+    display: none !important;
+}
+.post-form textarea{
+    width: 433px; 
+    height: 159px;
+}
+
+
+
