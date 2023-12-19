@@ -259,13 +259,13 @@ include_once 'database_conn.php';
             if ($result->num_rows > 0) {
                 $row = $result->fetch_assoc();
                 $currentTotalBalance = $row['total_bal'];
-                $currentAvailableBalance = $row['aval_bal'];
+                // $currentAvailableBalance = $row['aval_bal'];
 
                 // Check if the user has sufficient balance
                 if ($currentAvailableBalance >= $amountToWithdraw) {
                     // Calculate the new balances
                     $newTotalBalance = $currentTotalBalance - $amountToWithdraw;
-                    $newAvailableBalance = $currentAvailableBalance - $amountToWithdraw;
+                    // $newAvailableBalance = $currentAvailableBalance - $amountToWithdraw;
 
                     // Update the balances in the database
                     $sqlUpdateBalance = "UPDATE bank_info SET total_bal = $newTotalBalance, aval_bal = $newAvailableBalance WHERE acc_holder = '$userName'";

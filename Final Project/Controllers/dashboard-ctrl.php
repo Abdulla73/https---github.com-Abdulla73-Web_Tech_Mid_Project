@@ -31,8 +31,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 
-    if (isset($_POST["nothing"])) {
-        header("Location:../Views/login.php");
+    if (isset($_POST["chat"])) {
+        header("Location:../Views/chat.php");
         exit();
     }
 

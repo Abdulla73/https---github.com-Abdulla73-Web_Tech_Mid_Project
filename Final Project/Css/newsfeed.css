@@ -1,0 +1,156 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.logo{
+    float: left;
+    width: 33%;
+    background-color: lemonchiffon;
+}
+.logo img{
+    max-width: 82px;
+    max-height: 82px;
+    
+}
+
+.text{
+    float: left;
+    width: 33%;
+    background-color: lemonchiffon;
+    text-align: center;
+}
+
+.user-info{
+    float: left;
+    width: 15%;
+    background-color: lemonchiffon;
+    text-align: right;
+}
+.user-name{
+    float: left;
+    width: 19%;
+    background-color: lemonchiffon;
+    text-align: center;
+    padding-right: 10px;
+
+}
+.post-area{
+    text-align: center;
+}
+
+.watch-post{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.post-content{
+    float: left;
+    width: 50%;
+    text-align: left;
+    padding: 5px;
+   
+}
+.date-time{
+    float: left;
+    width: 50%;
+    text-align: right;
+    padding: 5px;
+    padding-bottom: 23px;
+   
+}
+
+.post-text{
+    float: left;
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    border: 2px ;
+}
+
+.like-area{
+    float: left;
+    width: 15%;
+    text-align: left;
+    border: 5px ;
+    padding: 5px;
+    border-top: 2px solid yellow ;
+    border-left:2px solid yellow ;
+    border-bottom: 2px solid yellow;
+}
+
+.like-count{
+    float: left;
+    width: 35%;
+    text-align: left;
+    padding: 7px;
+    border-top: 2px solid yellow ;
+    border-bottom: 2px solid yellow;
+}
+
+.like-area button{
+    height: 50px;
+    width: 50px;
+    border: none;
+    text-align: left;
+    padding: 0;
+}
+
+.like-area button img{
+    width: 50px;
+    height: 50px;
+}
+
+.comment-area{
+    float: left;
+    width: 25%;
+    text-align: right;
+    padding: 5px;
+    border-top: 2px solid yellow ;
+    border-bottom: 2px solid yellow;
+}
+
+.comment-count{
+    float: left;
+    width: 25%;
+    text-align: left;
+    border: 2px ;
+    padding: 7px;
+    border-top: 2px solid yellow ;
+    border-right:2px solid yellow ;
+    border-bottom: 2px solid yellow;
+}
+
+.comment-area  button{
+    height: 50px;
+    width: 50px;
+    border: none;
+    text-align: right;
+    padding: 0;
+
+}
+.comment-area button img{
+    width: 50px;
+    height: 50px;
+}
+.hidden{
+    display: none;
+}
+
+.comment-section{
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    border: 2px;
+    top: 200px;
+    left: 400px;
+    position: fixed;
+    background-color: white;
+
+}
+.view-comment{
+    float: left;
+    width: 90%;
+    text-align: left;
+    border: 2px solid green;
+}

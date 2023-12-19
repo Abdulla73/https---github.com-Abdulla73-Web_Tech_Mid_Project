@@ -38,12 +38,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if($insert)
                 {
                     echo" Registration successful";
-                    header("Location:../Views/login.php");
+                    // header("Location:../Views/login.php");
                     exit();
                 }
                 else{
                     echo "Registration failed. Please try again.";
-                    header("Location:../Views/registration.php");
+                    // header("Location:../Views/registration.php");
                     exit();
                 }
             }

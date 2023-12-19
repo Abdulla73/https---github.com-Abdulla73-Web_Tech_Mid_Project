@@ -91,10 +91,10 @@ $name = $_SESSION["user_name"];
 
                             <tr>
                                 <td>
-                                    <img src="../Resources/feed_logo.jpg" alt="News feed">
+                                    <img src="../Resources/chat.jpg" alt="chat">
                                 </td>
                                 <td>
-                                    <button type="submit" name="nothing">News feed</button>
+                                    <button type="submit" name="chat">Chat</button>
                                 </td>
                             </tr>
 
@@ -148,5 +148,4 @@ $name = $_SESSION["user_name"];
     </div>
     <script src="../Js/dashboard.js"></script>
 </body>
-
 </html>

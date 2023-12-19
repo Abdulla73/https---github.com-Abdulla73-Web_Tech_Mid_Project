@@ -1,20 +1,65 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const loginForm = document.getElementById("login-form");
-    const regForm = document.getElementById("reg-form");
 
-    // Initially, hide the regForm
-    regForm.style.display = "none";
-
-    // Function to toggle between login and reg forms
-    function toggleForms() {
-        loginForm.style.display = loginForm.style.display === "none" ? "block" : "none";
-        regForm.style.display = regForm.style.display === "none" ? "block" : "none";
+function showWarning() {
+    let mail =document.getElementById("mail").value;
+    let password =document.getElementById("password").value;
+    let error= "";
+    if(!mail){
+        error+="Email is empty";
+    }
+    if(!password){
+        error+="Password empty";
     }
 
-    // Attach the toggleForms function to the new-acc button
-    const newAccButton = document.querySelector("button[name='new-acc']");
-    newAccButton.addEventListener("click", function () {
-        // Toggle forms immediately
-        toggleForms();
-    });
-});
+    if(!error){
+        console.log("success");
+        // login-ctrl.php?user-mail=uqe&password=123456789&sign-in
+        checkuser();
+        
+    }
+    else{
+        console.log(error);
+        let errorelement= document.getElementById("error")
+        errorelement.innerHTML=error;
+        setTimeout(() => {
+            errorelement.innerHTML="";
+        }, 3000);
+    }
+
+}
+
+function checkuser() {
+    let mail = document.getElementById("mail").value;
+    let password = document.getElementById("password").value;
+ 
+ 
+    let xhttp = new XMLHttpRequest();
+    xhttp.open(
+        "POST",
+        "../controllers/login-ctrl.php",
+        true
+    );
+    
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+ 
+ 
+    xhttp.send("user-mail="+mail+"&password="+password+"&sign-in=abcd");
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            let responseText = this.responseText;
+            console.log( responseText);
+            let errorelement = document.getElementById("error");
+            if(responseText==="login successful"){
+                window.location.replace("../Views/dashboard.php")
+            }
+            else{
+                
+                errorelement.innerHTML=responseText;
+                setTimeout(() => {
+                    errorelement.innerHTML="";
+                }, 3000);
+            }
+        }
+    };
+}
+
+

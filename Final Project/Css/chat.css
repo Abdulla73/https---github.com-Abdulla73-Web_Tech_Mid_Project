@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+.logo{
+    float: left;
+    width: 33%;
+    background-color: lemonchiffon;
+}
+.logo img{
+    max-width: 82px;
+    max-height: 82px;
+    
+}
+
+.text{
+    float: left;
+    width: 33%;
+    background-color: lemonchiffon;
+    text-align: center;
+}
+
+.user-info{
+    float: left;
+    width: 15%;
+    background-color: lemonchiffon;
+    text-align: right;
+}
+.user-name{
+    float: left;
+    width: 19%;
+    background-color: lemonchiffon;
+    text-align: center;
+    padding-right: 10px;
+
+}
+.chat-part{
+    text-align: center;
+}
+
+.chat-frame{
+    width: 750px;
+    margin: 0 auto;
+
+}
+
+.chat-area{
+    float: left;
+    width: 70%;
+    text-align: center; 
+}
+
+.show-user{
+    float: left;
+    width: 30%;
+    text-align: left;
+}
+.show-user img{
+    height: 40px;
+    width: 40px;
+    padding: 2px;
+    margin: 10px;
+
+}
+
+
+.other-chat{
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+  
+  
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+  
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+
+.container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+
+.container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+  }
+  
+  /* Style time text */
+.time-right {
+    float: right;
+    color: #aaa;
+  }
+  
+  /* Style time text */
+.time-left {
+    float: left;
+    color: #999;
+  }
+
+.chat-input{
+    float: left;
+    width: 100%;
+  }
+.chat-input input{
+    width: 450px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: #ccc;
+    background-color: #ddd;
+  }
+
+.chat-input button{
+    height: 40px;
+    width: 70px;
+    border-radius: 5px;
+    border-color: #ccc;
+    background-color: #ddd;
+  }
+
+  .othe-chat{
+    text-align: center;
+  }
+
+  .othe-chats{
+    float: left;
+    width: 20%;
+    text-align:right;
+    
+  }
+.othe-chats img{
+    width: 30px;
+    height: 30px;
+    
+}
+.name-here{
+    text-align: left;
+    font-size: 17px;
+   
+}

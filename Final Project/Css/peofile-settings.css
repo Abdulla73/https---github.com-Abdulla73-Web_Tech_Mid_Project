@@ -1,0 +1,75 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.logo{
+    float: left;
+    width: 33%;
+    background-color: lemonchiffon;
+}
+.logo img{
+    max-width: 82px;
+    max-height: 82px;
+    
+}
+
+.text{
+    float: left;
+    width: 33%;
+    background-color: lemonchiffon;
+    text-align: center;
+}
+
+.user-info{
+    float: left;
+    width: 15%;
+    background-color: lemonchiffon;
+    text-align: right;
+}
+.user-name{
+    float: left;
+    width: 19%;
+    background-color: lemonchiffon;
+    text-align: center;
+    padding-right: 10px;
+
+}
+
+.area {
+    margin-top: 20px;
+}
+
+.body-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+    width: 60%;
+    padding: 20px;
+    margin: 5px auto; 
+    display: block; 
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-top: 5px;
+    
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;  
+    margin: 10px auto;  
+}
+
+form button:hover {
+    background-color: #45a049;
+}

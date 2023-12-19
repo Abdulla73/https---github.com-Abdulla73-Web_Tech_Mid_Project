@@ -1,15 +1,14 @@
 <?php
 include_once '../Models/login-model.php';
 session_start();
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_POST["sign-in"])) {
-        $user_mail=$_POST["user-mail"];
-        $password =$_POST["password"];
-
-        if(empty($user_mail) || empty($password) ){
-            echo "please enter your user username and password";
-        }
+		
+	if (isset($_REQUEST["sign-in"])) {
+		$user_mail=$_REQUEST["user-mail"];
+		$password =$_REQUEST["password"];
+		
+		if(empty($user_mail) || empty($password) ){
+		echo " Use name or mail empty ";
+		}
 
 		else
 		{
@@ -17,21 +16,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			if($status)
 			{
 				$_SESSION["user_name"] = $status;
-                header("Location: ../Views/dashboard.php");
-                exit();
+				echo "login successful";
+				exit();
 			}
 			else
 			{
-				echo "Invalid credintial. Please Check your username and password";
+				echo "Invalid User Name or Password";
 			}
 		}
-    }
-
-}
-
-if (isset($_POST["new-acc"])) {
-	header("Location:../Views/registration.php");
-	exit();
-}
-
-?>
+	}
+	
+	
+	
+	if (isset($_REQUEST["new-acc"])) {
+		 header("Location:../Views/registration.php");
+		
+		exit();
+	}
+		
+		
+	?>
+	
