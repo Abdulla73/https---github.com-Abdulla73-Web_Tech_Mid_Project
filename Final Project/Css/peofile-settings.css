@@ -37,20 +37,24 @@
 }
 
 .area {
-    margin-top: 20px;
+    text-align: center;
 }
 
 .body-section {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    float: left;
+    width: 99%;
+}
+.inputs-section{
+    text-align: center;
+    padding: 10px;
+    margin-top: 70px;
+   
 }
 
 form input {
     width: 60%;
     padding: 20px;
-    margin: 5px auto; 
+    margin: 10px auto; 
     display: block; 
     box-sizing: border-box;
     border: 1px solid #ccc;
@@ -67,7 +71,8 @@ form button {
     border-radius: 4px;
     cursor: pointer;
     display: block;  
-    margin: 10px auto;  
+    margin: 20px auto; 
+    width: 120px; 
 }
 
 form button:hover {

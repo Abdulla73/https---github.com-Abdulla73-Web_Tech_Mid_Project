@@ -45,13 +45,7 @@
     padding: 5px;
 }
 
-.other{
-    max-width: 85.6%;
-    float: left;
-   
-    margin-left: 5px;
-    padding: 5px;
-}
+
 
 .controls table tr td img{
     width: 50px;
@@ -124,5 +118,123 @@
     height: 159px;
 }
 
+.other{
+    width: 85.6%;
+    float: left;
+    
 
+}
 
+.main-content{
+    float: left;
+    width: 50%;
+   
+}
+  
+
+.main-content img{
+    height: 350px;
+    width: 300px;
+   padding-left: 30px;
+    padding-top: 25px;
+ 
+    
+}
+
+.main-content h3 {
+    display: inline;
+    position: absolute;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.main-content p {
+    display: inline;
+    position: fixed;
+    top: 135px;
+    left: 490px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.main-content a{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.content-text{
+    float: left;
+    width: 50%;
+    padding-left: 80px;
+    
+}
+
+.content-text img{
+    height: 225px;
+    width: 425px;
+    padding-left: 80px;
+    padding-top: 20px;
+   
+}
+
+.content-text h3{
+    padding-left: 80px;
+   
+}
+.content-text a{
+    padding-left: 80px;
+   font-size: 20px;
+}
+
+.last-section{
+    float: left;
+    width: 99%;
+    
+    padding: 5px;
+}
+
+.card1 {
+    float: left;
+    width: 27%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; 
+    padding-left: 5px;
+  
+}
+.card1 img {
+    height: 92px;
+    width: 40px;
+    border-radius: 5px 5px 0 0;
+  }
+
+.card2{
+    float: left;
+    width: 35%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; 
+    padding-left: 60px;
+    
+}
+
+.card2 img {
+    height: 92px;
+    width: 40px;
+    border-radius: 5px 5px 0 0;
+  }
+.card3{
+    float: left;
+    width: 35%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; 
+    padding-left: 60px;
+    
+}
+
+.card3 img {
+    height: 92px;
+    width: 40px;
+    border-radius: 5px 5px 0 0;
+  }

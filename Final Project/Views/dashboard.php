@@ -53,7 +53,7 @@ $name = $_SESSION["user_name"];
                                     <img src="../Resources/post_logo.png" alt="New post">
                                 </td>
                                 <td>
-                                    <button type="button" name="post-btn" onclick="new_post()" >New post</button>
+                                    <button type="button" name="post-btn" onclick="new_post()">New post</button>
                                 </td>
                             </tr>
                             <tr>
@@ -115,37 +115,65 @@ $name = $_SESSION["user_name"];
             </div>
 
             <div class="other">
-                <div class="pic5">
-                    <img src="../Resources/bar2.jpg" alt="pic">
+                <div class="main-content">
+                    <img src="../Resources/uni-1.png" alt="pic">
+                    <h3>From fear to courage: </h3>
+                    <p>Recalling the moment, Mim said, <br>
+                        "I was really scared and I felt <br>
+                        I was going to lose my brother. </p>
+                    <a href="#">Read more ></a>
                 </div>
 
-                <div class="pic7">
-                    <img src="../Resources/pie.png" alt="pic">
+                <div class="content-text">
+                    <img src="../Resources/uni2.png" alt="pic">
+                    <h3>From Crisis to Action: UNFPA, UNICEF, & UN Women shed light on key Essential Services to support Gender Based Violence </h3>
+                    <a href="#">Read more ></a>
                 </div>
-                <div class="pic6">
-                    <img src="../Resources/center-bar.jpg" alt="pic">
+
+
+                <div class="last-section">
+                    <div class="card1">
+                        <img src="../Resources/card1.png" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h4><b>Health Care</b></h4>
+                           
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <img src="../Resources/card2.png" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h4><b>Meena Cartton</b></h4>
+                            
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <img src="../Resources/card3.png" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h4><b>Smile & Happy</b></h4>
+                            
+                        </div>
+                    </div>
+                    
                 </div>
-
-
-
             </div>
 
-           
+
         </div>
     </form>
-    <div class="add-post hidden" id="add-post" >
+    <div class="add-post hidden" id="add-post">
         <div class="post-form">
 
-            <form action="" method="post" >
-    
+            <form action="" method="post">
+
                 <textarea name="new-post" id="post" cols="50" rows="4">
-        
+
                 </textarea>
-                <button type="submit" id="post-btn" name="post-btn" formaction="../Controllers/dashboard-ctrl.php" >Post</button>
+                <button type="submit" id="post-btn" name="post-btn" formaction="../Controllers/dashboard-ctrl.php">Post</button>
                 <button name="cancel" id="cancel" onclick="new_post()">Cancel</button>
             </form>
         </div>
     </div>
     <script src="../Js/dashboard.js"></script>
 </body>
+
 </html>

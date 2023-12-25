@@ -45,14 +45,16 @@ $name = $_SESSION["user_name"];
 
     <div class="area">
         <div class="body-section">
-            <form action="../Controllers/profile-setting-ctrl.php" method="post" >
-                <input type="text" name="update-mail" placeholder="Change user mail" >
-                <input type="password" name="cng-password" placeholder="Change password">
-                <input type="password" name="con-cng-password" placeholder="Confirm password" >
-                <input type="text" name="contract" placeholder="Contract number" >
-                <button type="submit" name="apply" >Apply</button>
-                
-            </form>
+            <div class="inputs-section">
+                <form action="../Controllers/profile-setting-ctrl.php" method="post" >
+                    <input type="text" name="update-mail" placeholder="Change user mail" >
+                    <input type="password" name="cng-password" placeholder="Change password">
+                    <input type="password" name="con-cng-password" placeholder="Confirm password" >
+                    <input type="text" name="contract" placeholder="Contract number" >
+                    <button type="submit" name="apply" >Apply</button>
+                    
+                </form>
+            </div>
         </div>
     </div>
 </body>
